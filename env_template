@@ -1,0 +1,24 @@
+# copy this file and rename it to .env
+# then add all the missing values/API keys/etc to it
+
+SRCDS_TOKEN="changeme" (value is is required to be listed & reachable, retrieve token here: https://steamcommunity.com/dev/managegameservers)
+SRCDS_RCONPW="changeme" (value can be overwritten by csgo/cfg/server.cfg)
+SRCDS_PW="changeme" (value can be overwritten by csgo/cfg/server.cfg)
+SRCDS_PORT=27016  (if you change this, make sure to change the ports in docker-compose.yml as well)
+SRCDS_TV_PORT=27020
+SRCDS_NET_PUBLIC_ADDRESS="0" (public facing ip, useful for local network setups)
+SRCDS_IP="0" (local ip to bind)
+SRCDS_LAN="0"
+SRCDS_FPSMAX=300
+SRCDS_TICKRATE=128
+SRCDS_MAXPLAYERS=14
+SRCDS_STARTMAP="de_dust2"
+SRCDS_REGION=3
+SRCDS_MAPGROUP="mg_active"
+SRCDS_GAMETYPE=0
+SRCDS_GAMEMODE=1
+SRCDS_HOSTNAME="New CSGO Server" (first launch only)
+SRCDS_WORKSHOP_START_MAP=0
+SRCDS_HOST_WORKSHOP_COLLECTION=0
+SRCDS_WORKSHOP_AUTHKEY="" (required to use host_workshop_map)
+ADDITIONAL_ARGS="" (Pass additional arguments to srcds. Make sure to escape correctly!)

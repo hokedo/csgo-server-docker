@@ -1,0 +1,13 @@
+version: '3'
+services:
+  csgo-server:
+    image: cm2network/csgo
+    container_name: csgo-server
+    ports:
+      - "27016:27016"
+    env_file:
+      - .env
+    volumes:
+      - csgo-dedicated-data:/home/steam/csgo-dedicated/ # persist data even if container shuts down
+volumes:
+  csgo-dedicated-data: # named volumes can be managed easier using docker-compose
